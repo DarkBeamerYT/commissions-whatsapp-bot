@@ -389,7 +389,8 @@ async function handleRemoveImage(client, m, args) {
 // ─────────────────────────────────────────
 async function route(client, m) {
   // Only handle own messages
-  if (!m.key.fromMe) return
+  console.log('[DEBUG]', JSON.stringify({ fromMe: m.key?.fromMe, text: msgText(m), type: Object.keys(m.message || {})[0] }))
+// if (!m.key.fromMe) return   // temporarily disabled
   const text = msgText(m)
   const matchedPrefix = PREFIXES.find(p => text.startsWith(p))
   if (!matchedPrefix) return
