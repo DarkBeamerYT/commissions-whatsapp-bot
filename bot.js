@@ -10,7 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 // ─────────────────────────────────────────
 //  CONFIG — edit before running
 // ─────────────────────────────────────────
-const MY_NUMBER = '60197588090' // e.g. '60123456789' with country code, no +
+const MY_NUMBER = '60123456789' // e.g. '60123456789' with country code, no +
 const PREFIXES  = ['/', '!', '.']    // add or remove prefixes here
 const TIMEZONE  = 'Asia/Kuching' // for timestamps in logs and TX IDs
 

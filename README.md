@@ -1,6 +1,6 @@
-# WhatsApp Commission Bot v2
+# WhatsApp Commission Bot
 
-Personal WhatsApp bot powered by **Baileys**. Only responds to your own messages.
+A WhatsApp selfbot powered by **@neoxr/baileys**.
 
 ---
 
@@ -20,7 +20,7 @@ npm install
 
 ### 3. Configure your number
 
-Open `bot.js` and set line 20:
+Open `bot.js` and set line 13:
 
 ```js
 const MY_NUMBER = '12345678901'; // country code + number, no + or spaces
@@ -56,7 +56,7 @@ pm2 startup
 | `/price` | Show pricing |
 | `/payment` | Show payment QR / info |
 | `/status` | Show commission slots |
-| `/<any custom>` | Whatever you defined |
+| `/<any custom>` | Whatever you define |
 
 ### Management commands
 | Command | What it does |
@@ -74,17 +74,11 @@ pm2 startup
 1. Send the image to yourself in WhatsApp
 2. **Reply** to that image with:
    ```
-   /setimage payment | Scan to pay via GCash 💸
+   /setimage payment | Scan to pay 💸
    ```
 3. Done — `/payment` now sends that image with caption
 
 You can also send an image and caption it `/setimage payment | caption` directly (no reply needed).
-
----
-
-## Edit-in-place behavior
-
-When you trigger a command, the bot tries to **edit your command message** to show the response text in-place. If that fails (message too old, or it's an image response), it sends a new message instead.
 
 ---
 
@@ -94,7 +88,7 @@ When you trigger a command, the bot tries to **edit your command message** to sh
 wabot/
 ├── bot.js
 ├── package.json
-├── auth/               # Auto-created — Baileys session (don't delete)
+├── auth/               # Auto-created session (don't delete)
 ├── images/             # Images saved here automatically via /setimage
 └── commands/
     ├── builtin.json    # Edit prices/payment text here
