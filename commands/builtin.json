@@ -1,0 +1,26 @@
+{
+  "ping": {
+    "description": "Check if bot is alive",
+    "response": "🟢 Pong! Bot is online.",
+    "image": null,
+    "caption": null
+  },
+  "price": {
+    "description": "Commission pricing",
+    "response": "💰 *Commission Prices*\n\n• Basic: $XX\n• Standard: $XX\n• Premium: $XX\n\n_Edit this in commands/builtin.json_",
+    "image": null,
+    "caption": null
+  },
+  "payment": {
+    "description": "Payment methods / QR code",
+    "response": null,
+    "image": null,
+    "caption": "💳 Scan to pay! — edit via /setimage payment | gcash_qr.jpg | caption"
+  },
+  "status": {
+    "description": "Commission slot status",
+    "response": "📋 *Commission Status*\n\n• Open slots: X\n• Queue: X people\n• Est. delivery: X weeks\n\n_Edit this in commands/builtin.json_",
+    "image": null,
+    "caption": null
+  }
+}

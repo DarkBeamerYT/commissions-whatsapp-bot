@@ -1,0 +1,16 @@
+{
+  "name": "whatsapp-commission-bot",
+  "version": "2.0.0",
+  "description": "Personal WhatsApp bot for commissions",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "@adiwajshing/baileys": "npm:@neoxr/baileys@latest",
+    "@neoxr/wb": "latest",
+    "pino": "^9.3.2",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
